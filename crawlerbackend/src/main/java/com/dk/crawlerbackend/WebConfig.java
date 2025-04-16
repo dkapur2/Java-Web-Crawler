@@ -13,10 +13,10 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
+                       registry.addMapping("/web-crawler/api/**")
                         .allowedOrigins("https://dkapur.com")
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*")
+                        .allowedMethods("GET", "POST", "OPTIONS")
+                        .allowedHeaders("*");
                         .allowCredentials(false); // Change to true if needed
             }
         };

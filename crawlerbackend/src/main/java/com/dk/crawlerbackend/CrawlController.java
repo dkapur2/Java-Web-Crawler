@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.ArrayList;
 
-@CrossOrigin(origins = "https://dkapur.com")
+@CrossOrigin(origins = "+")
 @RestController
 public class CrawlController {
 

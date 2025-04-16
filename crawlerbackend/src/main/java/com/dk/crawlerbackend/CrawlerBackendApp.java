@@ -18,7 +18,7 @@ public class CrawlerBackendApp {
 }
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/web-crawler/api")
 class CrawlerController {
 
     @PostMapping(value = "/crawl", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
